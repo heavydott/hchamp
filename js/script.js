@@ -431,19 +431,25 @@ $(document).ready(function() {
                 }
             }
 
-            teamMark1 = parseInt(teamMark1 / 10);
-            teamMark2 = parseInt(teamMark2 / 10);
+            teamMark1 = parseInt(teamMark1);
+            teamMark2 = parseInt(teamMark2);
 
-            if(teamMark1 < teamMark2) {
-                g1 = Math.floor(Math.random() * (1 + 1));
+            console.log(teamMark1, teamMark2);
+
+            /*if(teamMark1 < teamMark2) {
+                g1 = Math.floor(Math.random() * (teamMark1 + 1) / 10);
                 g2 = teamMark2 - teamMark1;
             } else if(teamMark2 < teamMark1) {
-                g2 = Math.floor(Math.random() * (1 + 1));
+                g2 = Math.floor(Math.random() * (teamMark2 + 1) / 10);
                 g1 = teamMark1 - teamMark2;
             } else {
                 g1 = parseInt(teamMark1 / 2);
                 g2 = parseInt(teamMark2 / 2);
-            }
+            }*/
+            g1 = Math.floor(Math.random() * (teamMark1 + 1) / 10);
+            g2 = Math.floor(Math.random() * (teamMark2 + 1) / 10);
+
+            console.log(g1, g2);
 
             containerMatch.find('.g1').val(g1);
             containerMatch.find('.g2').val(g2);
