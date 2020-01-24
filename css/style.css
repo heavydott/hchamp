@@ -1,0 +1,296 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+body {
+    background: #131313;
+    height: 100%;
+    padding: 20px;
+}
+
+section {
+    display: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+section.active {
+    display: flex;
+}
+
+.btn {
+    background: #0170a5;
+    padding: 10px;
+    font-size: 48px;
+    text-align: center;
+}
+
+.btn.disabled {
+    background: #313131;
+}
+
+.btn:not(.disabled):hover,
+.btn:not(.disabled):active,
+.btn:not(.disabled):focus {
+    background: #038bcc;
+}
+
+.title {
+    color: #0170a5;
+    font-size: 48px;
+    text-align: center;
+}
+
+input {
+    background: none;
+    border: none;
+    font-size: 48px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+}
+
+input:focus {
+    background: #313131;
+    border-bottom: 2px solid #038bcc;
+    outline: none;
+}
+
+/* FIRST */
+
+#first {
+    justify-content: center;
+}
+
+#first > div {
+    margin-bottom: 10px;
+}
+
+/* ENTER TEAMS */
+
+#enter-teams {
+    justify-content: center;
+}
+
+#enter-teams-inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.enter-team-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.enter-team {
+    width: calc(100% - 108px);
+}
+
+.enter-team-mark {
+    width: 50px;
+    margin-left: 5px;
+}
+
+.favorite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.favorite i {
+    font-size: 48px;
+}
+
+.favorite.active i {
+    font-size: 48px;
+    color: #038bcc;
+}
+
+#another {
+    margin-bottom: 10px;
+}
+
+/* MAIN */
+
+#main {
+    justify-content: center;
+}
+
+#table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#table > div {
+    margin-bottom: 10px;
+}
+
+#table .group table {
+    width: 100%;
+}
+
+#table table th {
+    border-bottom: 1px solid #313131;
+}
+
+#table table th,
+#table table td {
+    text-align: center;
+    padding: 10px 0;
+    border-spacing: 0;
+    font-size: 24px;
+}
+
+#table table th:first-child,
+#table table td:first-child {
+    text-align: left;
+}
+
+#schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 75px;
+}
+
+#group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#group .playoff,
+#group .group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#group .playoff .title,
+#group .group .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#group .playoff .match,
+#group .group .match {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#group .playoff .match .t1,
+#group .playoff .match .t2,
+#group .group .match .t1,
+#group .group .match .t2 {
+    width: 40%;
+    font-size: 24px;
+}
+
+#group .playoff .match .t2,
+#group .group .match .t2 {
+    text-align: right;
+}
+
+#group .playoff .match .goals,
+#group .group .match .goals {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    font-size: 24px;
+}
+
+#group .playoff .match .goals input,
+#group .group .match .goals input {
+    width: 45%;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+#group .playoff .match .do-random,
+#group .group .match .do-random {
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    color: #313131;
+    cursor: pointer;
+}
+
+#group .playoff .match .success,
+#group .group .match .success {
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    color: #313131;
+    cursor: pointer;
+}
+
+#group .playoff .match .success.active,
+#group .group .match .success.active {
+    color: #038bcc;
+}
+
+#do {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#winner {
+    font-size: 48px;
+    color: #038bcc;
+    text-align: center;
+    width: 100%;
+}
+
+/* PLAY-OFF TABLE */
+
+#table .cont {
+    width: 100%;
+    overflow: hidden;
+}
+
+#table .cont .scroll {
+    overflow: auto;
+}
+
+#playoff-table {
+    border-spacing: 0;
+}
+
+table#playoff-table td {
+    padding: 10px;
+}
+
+#playoff-table .bb {
+    border-bottom: 1px solid #313131;
+}
+
+#playoff-table .bl {
+    border-left: 1px solid #313131;
+}
+
+#playoff-table .br {
+    border-right: 1px solid #313131;
+}
+
+#playoff-table .bt {
+    border-top: 1px solid #313131;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>H Champ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <section id="first" class="active">
+        <div id="new-game" class="btn">Новый турнир</div>
+        <div id="continue" class="btn">Продолжить</div>
+    </section>
+    <section id="enter-teams">
+        <div class="title">Введите Команды</div>
+        <div id="enter-teams-inputs">
+            <div class="enter-team-wrap" data-id="0">
+                <input type="text" class="enter-team" placeholder="1">
+                <input type="text" class="enter-team-mark" placeholder="1">
+                <div class="favorite"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+            </div>
+        </div>
+        <div id="another" class="btn">Еще</div>
+        <div id="toss" class="btn" style="display: none;">Жеребьевка</div>
+    </section>
+    <section id="main">
+<!--        <div id="test">test</div>-->
+        <div id="table"></div>
+        <div id="schedule">
+            <div id="group"></div>
+        </div>
+        <div id="do" class="btn">Рассчитать</div>
+    </section>
+</body>
+</html>
